@@ -4,28 +4,17 @@
 
 html {
     font-size: 62.5%;
+    font-family: Poppins;
 }
 
 body {
     font-size: 1.6rem;
-    font-family: "Poppins", serif;
 }
 
-/* ================= common =================== */
+/* ==================== COMMON ======================= */
 a {
     text-decoration: none;
-    display: block;
-}
-
-.btn {
-    color: #fff;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 600;
-    border-radius: 24.5px;
-    padding: 0 16px;
-    min-width: 112px;
-    line-height: 50px;
+    display: inline-block;
 }
 
 .main-content {
@@ -35,59 +24,80 @@ a {
     max-width: calc(100% - 48px);
 }
 
-/* ================= HEADER =================== */
-.header.fixed {
-    position: sticky;
-    top: -28px;
+.btn {
+    background-color: #171100;
+    line-height: 50px;
+    padding: 0 16px;
+    border-radius: 24.5px;
+    color: #fff;
+    text-align: center;
 }
 
+
+
+/* ==================== HEADER ======================= */
 .header {
-    background-color: rgb(156, 133, 161);
+    background-color: #a49b6d;
 }
 
-header .body {
+.header .body {
     display: flex;
     align-items: center;
-    padding: 36px 0 8px 0;
+}
+
+.header .logo {
+    margin-right: auto;
 }
 
 .nav ul {
     display: flex;
 }
 
-.nav {
-    margin-left: auto;
-}
-
 .nav a {
-    padding: 1.2rem;
     color: #5F5B53;
     padding: 8px 21px;
+    /* background-color: aqua; */
+
 }
 
-.nav li.active a,
-.nav a:hover {
+.nav li a:hover {
     color: #171100;
     text-shadow: 1px 0 0 currentColor;
 }
 
+.nav li.active a {
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+
+
 .nav li.active a::after {
     content: "";
     display: block;
+    position: relative;
+    top: 6px;
+    left: 0.5px;
     width: 12px;
     height: 2px;
-    border-radius: 1px 0px 0px 0px;
-    color: #171100;
+    flex-shrink: 0;
+    border-radius: 1px;
+    background: #171100;
 }
 
-.btn_sign_up {
-    background-color: #171100;
-}
-
-.header .btn_sign_up {
+.header .btn-sign-up {
     min-width: 144px;
 }
 
-.header .action {
-    margin-left: 49px;
+.header div.action{
+    margin-left: 70px;
+}
+
+header .body{
+    padding: 36px 0 8px 0;
+}
+
+.header.sticky{
+    position: sticky;
+    top: -28px;
 }

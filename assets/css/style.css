@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-primary: Poppins;
+    --font-text: Sen
+}
+
 html {
     font-size: 62.5%;
     font-family: Poppins;
@@ -33,11 +38,20 @@ a {
     text-align: center;
 }
 
+.btn:hover {
+    opacity: 0.8;
+}
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
 
 
 /* ==================== HEADER ======================= */
 .header {
-    background-color: #a49b6d;
+    background-color: #FFFCF4;
+    z-index: 1;
 }
 
 .header .body {
@@ -70,8 +84,6 @@ a {
     text-shadow: 1px 0 0 currentColor;
 }
 
-
-
 .nav li.active a::after {
     content: "";
     display: block;
@@ -89,15 +101,202 @@ a {
     min-width: 144px;
 }
 
-.header div.action{
+.header div.action {
     margin-left: 70px;
 }
 
-header .body{
+header .body {
     padding: 36px 0 8px 0;
 }
 
-.header.sticky{
+.header.sticky {
     position: sticky;
     top: -28px;
+}
+
+.hero .main-content .body {
+    display: flex;
+}
+
+
+.hero {
+    background-color: #FFFCF4;
+}
+
+.hero .block-left {
+    position: relative;
+    width: 48%;
+    margin-top: 5.7rem;
+}
+
+.hero .body {
+    padding-bottom: 6.4rem;
+}
+
+.hero .block-right {
+    margin-left: 19%;
+    margin-top: 10.3rem;
+}
+
+.hero .block-sumary {
+    position: absolute;
+    bottom: 48px;
+    left: 300px;
+    min-width: 270px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+}
+
+.guy-lesson {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+}
+
+.block-sumary .sumary-content {
+    display: flex;
+}
+
+.sumary-content+.sumary-content {
+    margin-top: 1.4rem;
+}
+
+.sumary-content .logo1 {
+    background-color: #FFF9E8;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin-right: 1.6rem;
+    display: flex;
+}
+
+.sumary-content .logo2 {
+    background-color: #FCEFFF;
+    border-radius: 50%;
+    width: 48px;
+    margin-right: 1.6rem;
+    display: flex;
+    height: 48px;
+}
+
+.sumary-content .logo3 {
+    background-color: #EBEAFF;
+    border-radius: 50%;
+    margin-right: 1.6rem;
+    width: 48px;
+    display: flex;
+    height: 48px;
+}
+
+.hero .sumary-content {
+    align-items: center;
+}
+
+.sumary-content .logo-course {
+    margin: auto;
+}
+
+.sumary-info .numberCourse {
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.sumary-info .course-name {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.hero .block-right .title {
+    color: #171100;
+    font-family: var(--font-text);
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px;
+    width: 470px;
+}
+
+.hero .block-right .text {
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+    max-width: 47rem;
+}
+
+.hero .block-right .text-info {
+    margin-top: 2.8rem;
+    margin-bottom: 3.8rem;
+}
+
+.hero .cta-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.8rem;
+}
+
+.hero .btn-see-course {
+    min-width: 180px;
+    line-height: 6.4rem;
+    border-radius: 32px;
+    background: #FFB900;
+    margin-right: 2.8rem;
+}
+
+.hero .cta-group button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+}
+
+.hero .block-right .cta-group button .see-video {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0px 16px 32px 2px rgba(0, 0, 0, 0.05);
+}
+
+.hero .block-right .cta-group button .logo {
+    width: 12px;
+    height: 12px;
+    margin: auto;
+}
+
+.hero .cta-group button span {
+    width: 148px;
+    align-self: center;
+    color: #171100;
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.hero .block-right p.text {
+    margin-bottom: .8rem;
+}
+
+.hero .block-right .text-group {
+    display: flex;
+}
+
+.hero .block-right .text-group .text {
+    margin-right: 2.8rem;
+}
+
+.hero .block-right .text-group strong {
+    color: #171100;
+    font-family: var(--font-primary);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.23;
+    margin-right: 1.1rem;
 }
